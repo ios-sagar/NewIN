@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		FF7EBC2827D66206001C18DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC2727D66206001C18DC /* AppDelegate.swift */; };
 		FF7EBC2A27D66206001C18DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC2927D66206001C18DC /* SceneDelegate.swift */; };
-		FF7EBC2C27D66206001C18DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC2B27D66206001C18DC /* ViewController.swift */; };
+		FF7EBC2C27D66206001C18DC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC2B27D66206001C18DC /* DashboardViewController.swift */; };
 		FF7EBC2F27D66206001C18DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7EBC2D27D66206001C18DC /* Main.storyboard */; };
 		FF7EBC3127D66207001C18DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7EBC3027D66207001C18DC /* Assets.xcassets */; };
 		FF7EBC3427D66207001C18DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7EBC3227D66207001C18DC /* LaunchScreen.storyboard */; };
 		FF7EBC3F27D66207001C18DC /* NewINTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC3E27D66207001C18DC /* NewINTests.swift */; };
 		FF7EBC4927D66207001C18DC /* NewINUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC4827D66207001C18DC /* NewINUITests.swift */; };
 		FF7EBC4B27D66207001C18DC /* NewINUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC4A27D66207001C18DC /* NewINUITestsLaunchTests.swift */; };
+		FF7EBC6127D6677D001C18DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6027D6677D001C18DC /* Router.swift */; };
+		FF7EBC6227D6677D001C18DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6027D6677D001C18DC /* Router.swift */; };
+		FF7EBC6327D6677D001C18DC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6027D6677D001C18DC /* Router.swift */; };
+		FF7EBC6527D66794001C18DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6427D66794001C18DC /* Constants.swift */; };
+		FF7EBC6627D66794001C18DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6427D66794001C18DC /* Constants.swift */; };
+		FF7EBC6727D66794001C18DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6427D66794001C18DC /* Constants.swift */; };
+		FF7EBC6A27D66969001C18DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF7EBC6927D66969001C18DC /* Alamofire */; };
+		FF7EBC6C27D66985001C18DC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6B27D66985001C18DC /* NetworkManager.swift */; };
+		FF7EBC6D27D66985001C18DC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6B27D66985001C18DC /* NetworkManager.swift */; };
+		FF7EBC6E27D66985001C18DC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6B27D66985001C18DC /* NetworkManager.swift */; };
+		FF7EBC7027D669A2001C18DC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6F27D669A2001C18DC /* RequestManager.swift */; };
+		FF7EBC7127D669A2001C18DC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6F27D669A2001C18DC /* RequestManager.swift */; };
+		FF7EBC7227D669A2001C18DC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC6F27D669A2001C18DC /* RequestManager.swift */; };
+		FF7EBC7427D66B2C001C18DC /* DashboardviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC7327D66B2C001C18DC /* DashboardviewModel.swift */; };
+		FF7EBC7527D66B2C001C18DC /* DashboardviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC7327D66B2C001C18DC /* DashboardviewModel.swift */; };
+		FF7EBC7627D66B2C001C18DC /* DashboardviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC7327D66B2C001C18DC /* DashboardviewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +55,7 @@
 		FF7EBC2427D66206001C18DC /* NewIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7EBC2727D66206001C18DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7EBC2927D66206001C18DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF7EBC2B27D66206001C18DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF7EBC2B27D66206001C18DC /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		FF7EBC2E27D66206001C18DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF7EBC3027D66207001C18DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF7EBC3327D66207001C18DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,11 @@
 		FF7EBC4427D66207001C18DC /* NewINUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewINUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7EBC4827D66207001C18DC /* NewINUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewINUITests.swift; sourceTree = "<group>"; };
 		FF7EBC4A27D66207001C18DC /* NewINUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewINUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF7EBC6027D6677D001C18DC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FF7EBC6427D66794001C18DC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF7EBC6B27D66985001C18DC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FF7EBC6F27D669A2001C18DC /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		FF7EBC7327D66B2C001C18DC /* DashboardviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardviewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7EBC6A27D66969001C18DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +121,12 @@
 		FF7EBC2627D66206001C18DC /* NewIN */ = {
 			isa = PBXGroup;
 			children = (
+				FF7EBC5F27D66760001C18DC /* Network */,
+				FF7EBC5E27D6675A001C18DC /* Services */,
+				FF7EBC5B27D6673B001C18DC /* ViewModels */,
+				FF7EBC5727D6670A001C18DC /* ViewControllers */,
 				FF7EBC2727D66206001C18DC /* AppDelegate.swift */,
 				FF7EBC2927D66206001C18DC /* SceneDelegate.swift */,
-				FF7EBC2B27D66206001C18DC /* ViewController.swift */,
-				FF7EBC2D27D66206001C18DC /* Main.storyboard */,
 				FF7EBC3027D66207001C18DC /* Assets.xcassets */,
 				FF7EBC3227D66207001C18DC /* LaunchScreen.storyboard */,
 				FF7EBC3527D66207001C18DC /* Info.plist */,
@@ -127,6 +151,81 @@
 			path = NewINUITests;
 			sourceTree = "<group>";
 		};
+		FF7EBC5727D6670A001C18DC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EBC5A27D66735001C18DC /* Cart */,
+				FF7EBC5927D6672C001C18DC /* WishList */,
+				FF7EBC5827D6671F001C18DC /* Dashboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF7EBC5827D6671F001C18DC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EBC2B27D66206001C18DC /* DashboardViewController.swift */,
+				FF7EBC2D27D66206001C18DC /* Main.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		FF7EBC5927D6672C001C18DC /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WishList;
+			sourceTree = "<group>";
+		};
+		FF7EBC5A27D66735001C18DC /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		FF7EBC5B27D6673B001C18DC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EBC5D27D6674B001C18DC /* WishListViewModel */,
+				FF7EBC5C27D66741001C18DC /* DashboardViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FF7EBC5C27D66741001C18DC /* DashboardViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EBC7327D66B2C001C18DC /* DashboardviewModel.swift */,
+			);
+			path = DashboardViewModel;
+			sourceTree = "<group>";
+		};
+		FF7EBC5D27D6674B001C18DC /* WishListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WishListViewModel;
+			sourceTree = "<group>";
+		};
+		FF7EBC5E27D6675A001C18DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EBC6027D6677D001C18DC /* Router.swift */,
+				FF7EBC6427D66794001C18DC /* Constants.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF7EBC5F27D66760001C18DC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EBC6B27D66985001C18DC /* NetworkManager.swift */,
+				FF7EBC6F27D669A2001C18DC /* RequestManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +242,9 @@
 			dependencies = (
 			);
 			name = NewIN;
+			packageProductDependencies = (
+				FF7EBC6927D66969001C18DC /* Alamofire */,
+			);
 			productName = NewIN;
 			productReference = FF7EBC2427D66206001C18DC /* NewIN.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +317,9 @@
 				Base,
 			);
 			mainGroup = FF7EBC1B27D66206001C18DC;
+			packageReferences = (
+				FF7EBC6827D66969001C18DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FF7EBC2527D66206001C18DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7EBC2C27D66206001C18DC /* ViewController.swift in Sources */,
+				FF7EBC6C27D66985001C18DC /* NetworkManager.swift in Sources */,
+				FF7EBC6527D66794001C18DC /* Constants.swift in Sources */,
+				FF7EBC6127D6677D001C18DC /* Router.swift in Sources */,
+				FF7EBC2C27D66206001C18DC /* DashboardViewController.swift in Sources */,
+				FF7EBC7027D669A2001C18DC /* RequestManager.swift in Sources */,
 				FF7EBC2827D66206001C18DC /* AppDelegate.swift in Sources */,
 				FF7EBC2A27D66206001C18DC /* SceneDelegate.swift in Sources */,
+				FF7EBC7427D66B2C001C18DC /* DashboardviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +378,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7EBC7127D669A2001C18DC /* RequestManager.swift in Sources */,
+				FF7EBC6D27D66985001C18DC /* NetworkManager.swift in Sources */,
+				FF7EBC6227D6677D001C18DC /* Router.swift in Sources */,
 				FF7EBC3F27D66207001C18DC /* NewINTests.swift in Sources */,
+				FF7EBC6627D66794001C18DC /* Constants.swift in Sources */,
+				FF7EBC7527D66B2C001C18DC /* DashboardviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7EBC4B27D66207001C18DC /* NewINUITestsLaunchTests.swift in Sources */,
+				FF7EBC6327D6677D001C18DC /* Router.swift in Sources */,
+				FF7EBC6E27D66985001C18DC /* NetworkManager.swift in Sources */,
+				FF7EBC7227D669A2001C18DC /* RequestManager.swift in Sources */,
+				FF7EBC7627D66B2C001C18DC /* DashboardviewModel.swift in Sources */,
 				FF7EBC4927D66207001C18DC /* NewINUITests.swift in Sources */,
+				FF7EBC6727D66794001C18DC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF7EBC6827D66969001C18DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF7EBC6927D66969001C18DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7EBC6827D66969001C18DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF7EBC1C27D66206001C18DC /* Project object */;
 }
