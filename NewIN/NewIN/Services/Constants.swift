@@ -10,4 +10,7 @@ import Foundation
 struct Constants {
     static let storyboard = "Main"
     static let getIteamList = "https://run.mocky.io/v3/5c138271-d8dd-4112-8fb4-3adb1b7f689e"
+    static let dashboard = "DashboardViewController"
+    static let itemCollectionViewCell = "ItemCollectionViewCell"
+    static let itelCollectionCellID = "ItemCollectionViewCellID"
 }

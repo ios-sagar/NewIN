@@ -19,37 +19,79 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-Qa-ft9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8k-XY-33m">
-                                        <rect key="frame" x="10" y="48" width="394" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8k-XY-33m">
+                                        <rect key="frame" x="92" y="48" width="228" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="4Pn-of-96m"/>
-                                            <constraint firstAttribute="width" constant="394" id="gDZ-QW-5xj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrl-dl-4SU">
+                                        <rect key="frame" x="348" y="46" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="juL-Ko-Pih"/>
+                                            <constraint firstAttribute="width" constant="40" id="kBP-fV-I1J"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="wishlist"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstItem="o8k-XY-33m" firstAttribute="leading" secondItem="w9t-Qa-ft9" secondAttribute="leading" constant="10" id="APP-Tk-wTE"/>
-                                    <constraint firstAttribute="trailing" secondItem="o8k-XY-33m" secondAttribute="trailing" constant="10" id="eBO-gi-6FN"/>
+                                    <constraint firstItem="o8k-XY-33m" firstAttribute="leading" secondItem="w9t-Qa-ft9" secondAttribute="leading" constant="92" id="APP-Tk-wTE"/>
+                                    <constraint firstItem="zrl-dl-4SU" firstAttribute="top" secondItem="w9t-Qa-ft9" secondAttribute="top" constant="46" id="NyD-Ze-oSV"/>
+                                    <constraint firstAttribute="bottom" secondItem="zrl-dl-4SU" secondAttribute="bottom" constant="18" id="coI-qY-TCh"/>
+                                    <constraint firstItem="zrl-dl-4SU" firstAttribute="leading" secondItem="o8k-XY-33m" secondAttribute="trailing" constant="28" id="dvw-Li-fhb"/>
+                                    <constraint firstAttribute="trailing" secondItem="o8k-XY-33m" secondAttribute="trailing" constant="94" id="eBO-gi-6FN"/>
                                     <constraint firstItem="o8k-XY-33m" firstAttribute="top" secondItem="w9t-Qa-ft9" secondAttribute="top" constant="48" id="fjI-sS-P6f"/>
+                                    <constraint firstAttribute="trailing" secondItem="zrl-dl-4SU" secondAttribute="trailing" constant="26" id="h3C-SU-4QJ"/>
                                     <constraint firstAttribute="height" constant="104" id="lxI-ek-uux"/>
                                     <constraint firstAttribute="bottom" secondItem="o8k-XY-33m" secondAttribute="bottom" constant="16" id="sbk-DN-ptw"/>
                                     <constraint firstAttribute="width" constant="414" id="sc5-C5-TGp"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vDb-yz-IfW">
+                                <rect key="frame" x="0.0" y="105" width="414" height="776"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="776" id="EC0-Fl-GvW"/>
+                                    <constraint firstAttribute="width" constant="414" id="cmI-PP-aHR"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RMk-hU-DDf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KnO-Zv-sOc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iVU-cC-eyF"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDb-yz-IfW" firstAttribute="top" secondItem="w9t-Qa-ft9" secondAttribute="bottom" constant="1" id="1hq-i7-4Cm"/>
+                            <constraint firstItem="vDb-yz-IfW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RVS-Cw-L7P"/>
+                            <constraint firstAttribute="bottom" secondItem="vDb-yz-IfW" secondAttribute="bottom" constant="15" id="Uuw-H3-tEt"/>
+                            <constraint firstItem="vDb-yz-IfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bOB-Kh-W86"/>
                             <constraint firstItem="w9t-Qa-ft9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="do7-av-A1u"/>
                             <constraint firstItem="w9t-Qa-ft9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="y3Y-sg-MfP"/>
                             <constraint firstItem="w9t-Qa-ft9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yrT-dp-65L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aEr-Ic-JAH"/>
+                    <connections>
+                        <outlet property="btn_wishlist" destination="zrl-dl-4SU" id="ZKd-hP-6Y4"/>
+                        <outlet property="collectionview_items" destination="vDb-yz-IfW" id="Ezt-jn-ALi"/>
+                        <outlet property="titleLbl" destination="o8k-XY-33m" id="p3Z-3R-JIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,8 +115,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="wishlist" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
