@@ -16,7 +16,9 @@ class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lbl_badgeValueOne: UILabel!
     @IBOutlet weak var btn_wishlist: UIButton!
     @IBOutlet weak var lbl_badgeValueTwo: UILabel!
-    @IBOutlet weak var lbl_badheValueThree: UILabel!
+    
+    var itemValue = [Item]()
+    var isAddedToWishList = true
     
     
     override func awakeFromNib() {
@@ -25,12 +27,16 @@ class ItemCollectionViewCell: UICollectionViewCell {
     }
     
     func configureCell(item:[Item], indexPath:Int){
+        self.itemValue = item
         self.lbl_brand.text = item[indexPath].brand
         self.lbl_itemName.text = item[indexPath].name
         self.lbl_price.text = String(item[indexPath].price) + " AED"
-        self.lbl_badgeValueOne.text = item[indexPath].badges.first
-        self.lbl_badgeValueTwo.text = item[indexPath].badges.first
-        self.lbl_badheValueThree.text = item[indexPath].badges.first
+        if(item[indexPath].badges.count == 1){
+            lbl_badgeValueOne.text = item[indexPath].badges[0]
+        }else if(item[indexPath].badges.count == 2){
+            lbl_badgeValueOne.text = item[indexPath].badges[0]
+            lbl_badgeValueTwo.text = item[indexPath].badges[1]
+        }
         let url = URL(string: item[indexPath].image)!
         DispatchQueue.global().async {
             if let data = try? Data(contentsOf: url) {
@@ -39,6 +45,23 @@ class ItemCollectionViewCell: UICollectionViewCell {
                 }
             }
         }
+        btn_wishlist.tag = indexPath+1
     }
     
+    @IBAction func addToWishListClicked(_ sender: Any) {
+        for index in 1...self.itemValue.count{
+            if index == btn_wishlist.tag{
+                isAddedToWishList = !isAddedToWishList
+                if isAddedToWishList {
+                    btn_wishlist.backgroundColor = .clear
+                    //remove from array
+                    Global.sharedInstance.itemValues = Global.sharedInstance.itemValues.filter({$0.id != String(index)})
+                } else {
+                    btn_wishlist.backgroundColor = .lightGray
+                    //add to array
+                    Global.sharedInstance.itemValues.append(itemValue[btn_wishlist.tag-1])
+                }
+            }
+        }
+    }
 }

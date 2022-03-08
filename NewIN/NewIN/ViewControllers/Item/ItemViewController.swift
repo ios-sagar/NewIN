@@ -60,4 +60,12 @@ class ItemViewController: UIViewController {
             btn_AddToCart.backgroundColor = .lightGray
         }
     }
+    
+    @IBAction func closeBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func backBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
