@@ -11,7 +11,6 @@ class DashboardViewController: UIViewController {
     
     var dashboardVM = DashboardviewModel()
     @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var btn_wishlist: UIButton!
     @IBOutlet weak var collectionview_items: UICollectionView!
     var itemData = [Item]()
     
@@ -20,6 +19,7 @@ class DashboardViewController: UIViewController {
         // Do any additional setup after loading the view.
         getReview()
         registerCollectionView()
+        setRightBarButton()
     }
     
     // MARK: - User defined methods
@@ -38,6 +38,30 @@ class DashboardViewController: UIViewController {
         collectionview_items.register(UINib.init(nibName: Constants.itemCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: Constants.itelCollectionCellID)
     }
     
+    @objc func btnWishListClicked(_ sender: Any) {
+        if let wishlistViewController = Router.getControllerWith(identifier: Views.wishlist.rawValue) as? WishListViewController {
+            wishlistViewController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(wishlistViewController, animated: true, completion: nil)
+        }
+    }
+    
+    func setRightBarButton(){
+        let wishListBtn = UIButton(type: .custom)
+        wishListBtn.setImage(UIImage(named: "wishlist"), for: .normal)
+        wishListBtn.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        wishListBtn.addTarget(self, action: #selector(DashboardViewController.btnWishListClicked(_:)), for: .touchUpInside)
+        let rightBtn = UIBarButtonItem(customView: wishListBtn)
+        self.navigationItem.rightBarButtonItem = rightBtn
+    }
+    
+    func navigateItemView(item:[Item], indexPath:Int){
+        if let itemViewController = Router.getControllerWith(identifier: Views.itemView.rawValue) as? ItemViewController {
+            itemViewController.modalPresentationStyle = .fullScreen
+            itemViewController.itemData = item
+            itemViewController.indexPath = indexPath
+            self.navigationController?.present(itemViewController, animated: true, completion: nil)
+        }
+    }
 }
 
 extension DashboardViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -51,9 +75,8 @@ extension DashboardViewController : UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 240.0, height: 290.0)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigateItemView(item:itemData, indexPath:indexPath.row)
     }
-
 }
 

@@ -38,6 +38,18 @@
 		FF7EBC7D27D68C59001C18DC /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7EBC7927D68C59001C18DC /* ItemCollectionViewCell.xib */; };
 		FF7EBC7E27D68C59001C18DC /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7EBC7927D68C59001C18DC /* ItemCollectionViewCell.xib */; };
 		FF7EBC7F27D68C59001C18DC /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7EBC7927D68C59001C18DC /* ItemCollectionViewCell.xib */; };
+		FF7EBC8127D699FE001C18DC /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC8027D699FE001C18DC /* WishListViewController.swift */; };
+		FF7EBC8227D699FE001C18DC /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC8027D699FE001C18DC /* WishListViewController.swift */; };
+		FF7EBC8327D699FE001C18DC /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBC8027D699FE001C18DC /* WishListViewController.swift */; };
+		FF85D93C27D7686F00CFD9EF /* WishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D93A27D7686F00CFD9EF /* WishListTableViewCell.swift */; };
+		FF85D93D27D7687000CFD9EF /* WishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D93A27D7686F00CFD9EF /* WishListTableViewCell.swift */; };
+		FF85D93E27D7687000CFD9EF /* WishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D93A27D7686F00CFD9EF /* WishListTableViewCell.swift */; };
+		FF85D93F27D7687000CFD9EF /* WishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF85D93B27D7686F00CFD9EF /* WishListTableViewCell.xib */; };
+		FF85D94027D7687000CFD9EF /* WishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF85D93B27D7686F00CFD9EF /* WishListTableViewCell.xib */; };
+		FF85D94127D7687000CFD9EF /* WishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF85D93B27D7686F00CFD9EF /* WishListTableViewCell.xib */; };
+		FF85D95027D7798400CFD9EF /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D94F27D7798400CFD9EF /* ItemViewController.swift */; };
+		FF85D95127D7798400CFD9EF /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D94F27D7798400CFD9EF /* ItemViewController.swift */; };
+		FF85D95227D7798400CFD9EF /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D94F27D7798400CFD9EF /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +90,10 @@
 		FF7EBC7327D66B2C001C18DC /* DashboardviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardviewModel.swift; sourceTree = "<group>"; };
 		FF7EBC7827D68C59001C18DC /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF7EBC7927D68C59001C18DC /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF7EBC8027D699FE001C18DC /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
+		FF85D93A27D7686F00CFD9EF /* WishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTableViewCell.swift; sourceTree = "<group>"; };
+		FF85D93B27D7686F00CFD9EF /* WishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishListTableViewCell.xib; sourceTree = "<group>"; };
+		FF85D94F27D7798400CFD9EF /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +178,8 @@
 		FF7EBC5727D6670A001C18DC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF7EBC5A27D66735001C18DC /* Cart */,
+				FF7EBC2D27D66206001C18DC /* Main.storyboard */,
+				FF85D94E27D7797500CFD9EF /* Item */,
 				FF7EBC5927D6672C001C18DC /* WishList */,
 				FF7EBC5827D6671F001C18DC /* Dashboard */,
 			);
@@ -174,7 +191,6 @@
 			children = (
 				FF7EBC7727D68C3F001C18DC /* CustomCell */,
 				FF7EBC2B27D66206001C18DC /* DashboardViewController.swift */,
-				FF7EBC2D27D66206001C18DC /* Main.storyboard */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -182,15 +198,10 @@
 		FF7EBC5927D6672C001C18DC /* WishList */ = {
 			isa = PBXGroup;
 			children = (
+				FF85D93927D7684E00CFD9EF /* CustomCell */,
+				FF7EBC8027D699FE001C18DC /* WishListViewController.swift */,
 			);
 			path = WishList;
-			sourceTree = "<group>";
-		};
-		FF7EBC5A27D66735001C18DC /* Cart */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cart;
 			sourceTree = "<group>";
 		};
 		FF7EBC5B27D6673B001C18DC /* ViewModels */ = {
@@ -242,6 +253,23 @@
 				FF7EBC7927D68C59001C18DC /* ItemCollectionViewCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		FF85D93927D7684E00CFD9EF /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF85D93A27D7686F00CFD9EF /* WishListTableViewCell.swift */,
+				FF85D93B27D7686F00CFD9EF /* WishListTableViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		FF85D94E27D7797500CFD9EF /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				FF85D94F27D7798400CFD9EF /* ItemViewController.swift */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +384,7 @@
 			files = (
 				FF7EBC3427D66207001C18DC /* LaunchScreen.storyboard in Resources */,
 				FF7EBC7D27D68C59001C18DC /* ItemCollectionViewCell.xib in Resources */,
+				FF85D93F27D7687000CFD9EF /* WishListTableViewCell.xib in Resources */,
 				FF7EBC3127D66207001C18DC /* Assets.xcassets in Resources */,
 				FF7EBC2F27D66206001C18DC /* Main.storyboard in Resources */,
 			);
@@ -365,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF85D94027D7687000CFD9EF /* WishListTableViewCell.xib in Resources */,
 				FF7EBC7E27D68C59001C18DC /* ItemCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF85D94127D7687000CFD9EF /* WishListTableViewCell.xib in Resources */,
 				FF7EBC7F27D68C59001C18DC /* ItemCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,11 +416,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7EBC6C27D66985001C18DC /* NetworkManager.swift in Sources */,
+				FF7EBC8127D699FE001C18DC /* WishListViewController.swift in Sources */,
 				FF7EBC6527D66794001C18DC /* Constants.swift in Sources */,
 				FF7EBC6127D6677D001C18DC /* Router.swift in Sources */,
 				FF7EBC7A27D68C59001C18DC /* ItemCollectionViewCell.swift in Sources */,
+				FF85D95027D7798400CFD9EF /* ItemViewController.swift in Sources */,
 				FF7EBC2C27D66206001C18DC /* DashboardViewController.swift in Sources */,
 				FF7EBC7027D669A2001C18DC /* RequestManager.swift in Sources */,
+				FF85D93C27D7686F00CFD9EF /* WishListTableViewCell.swift in Sources */,
 				FF7EBC2827D66206001C18DC /* AppDelegate.swift in Sources */,
 				FF7EBC2A27D66206001C18DC /* SceneDelegate.swift in Sources */,
 				FF7EBC7427D66B2C001C18DC /* DashboardviewModel.swift in Sources */,
@@ -405,6 +439,9 @@
 				FF7EBC6227D6677D001C18DC /* Router.swift in Sources */,
 				FF7EBC3F27D66207001C18DC /* NewINTests.swift in Sources */,
 				FF7EBC6627D66794001C18DC /* Constants.swift in Sources */,
+				FF85D93D27D7687000CFD9EF /* WishListTableViewCell.swift in Sources */,
+				FF7EBC8227D699FE001C18DC /* WishListViewController.swift in Sources */,
+				FF85D95127D7798400CFD9EF /* ItemViewController.swift in Sources */,
 				FF7EBC7527D66B2C001C18DC /* DashboardviewModel.swift in Sources */,
 				FF7EBC7B27D68C59001C18DC /* ItemCollectionViewCell.swift in Sources */,
 			);
@@ -414,13 +451,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF85D95227D7798400CFD9EF /* ItemViewController.swift in Sources */,
 				FF7EBC4B27D66207001C18DC /* NewINUITestsLaunchTests.swift in Sources */,
 				FF7EBC6327D6677D001C18DC /* Router.swift in Sources */,
+				FF85D93E27D7687000CFD9EF /* WishListTableViewCell.swift in Sources */,
 				FF7EBC6E27D66985001C18DC /* NetworkManager.swift in Sources */,
 				FF7EBC7227D669A2001C18DC /* RequestManager.swift in Sources */,
 				FF7EBC7627D66B2C001C18DC /* DashboardviewModel.swift in Sources */,
 				FF7EBC7C27D68C59001C18DC /* ItemCollectionViewCell.swift in Sources */,
 				FF7EBC4927D66207001C18DC /* NewINUITests.swift in Sources */,
+				FF7EBC8327D699FE001C18DC /* WishListViewController.swift in Sources */,
 				FF7EBC6727D66794001C18DC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
