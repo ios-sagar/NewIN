@@ -13,7 +13,8 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var collectionview_items: UICollectionView!
     var itemData = [Item]()
-    
+    var indicator = UIActivityIndicatorView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,13 +25,14 @@ class DashboardViewController: UIViewController {
     
     // MARK: - User defined methods
     func getReview() {
+        activityIndicator()
         dashboardVM.apiAllItems() { items, Error in
             if let allIteams = items {
-                print(allIteams)
                 self.titleLbl.text = allIteams.title
                 self.itemData = allIteams.items
                 self.collectionview_items.reloadData()
             }
+            self.dismiss(animated: false, completion: nil)
         }
     }
     
@@ -61,6 +63,16 @@ class DashboardViewController: UIViewController {
             itemViewController.indexPath = indexPath
             self.navigationController?.present(itemViewController, animated: true, completion: nil)
         }
+    }
+    
+    func activityIndicator() {
+        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.gray
+        loadingIndicator.startAnimating();
+        alert.view.addSubview(loadingIndicator)
+        present(alert, animated: true, completion: nil)
     }
 }
 

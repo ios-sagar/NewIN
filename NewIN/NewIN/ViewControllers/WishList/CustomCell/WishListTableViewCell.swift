@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol reloadListDelegate{
+    func reloadList()
+}
+
 class WishListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var img_itemImg: UIImageView!
@@ -14,8 +18,10 @@ class WishListTableViewCell: UITableViewCell {
     @IBOutlet weak var lbl_name: UILabel!
     @IBOutlet weak var lbl_price: UILabel!
     @IBOutlet weak var btn_remove: UIButton!
+    var reloadListDelegate : reloadListDelegate?
     
     var itemValue = [Item]()
+    var indexPathValue : Int?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -34,6 +40,7 @@ class WishListTableViewCell: UITableViewCell {
     
     func configureCell(item:[Item], indexPath:Int){
         self.itemValue = item
+        self.indexPathValue = indexPath
         self.lbl_brand.text = item[indexPath].brand
         self.lbl_name.text = item[indexPath].name
         self.lbl_price.text = String(item[indexPath].price) + " AED"
@@ -55,10 +62,12 @@ class WishListTableViewCell: UITableViewCell {
     }
     
     @IBAction func removeBtnClicked(_ sender: Any) {
-        for index in 1...self.itemValue.count{
-            if index == btn_remove.tag{
-                Global.sharedInstance.itemValues = Global.sharedInstance.itemValues.filter({$0.id != String(index)})
+        for index in 0...self.itemValue.count{
+            if index == indexPathValue{
+                //Global.sharedInstance.itemValues = Global.sharedInstance.itemValues.filter({$0.id != String(index)})
+                Global.sharedInstance.itemValues.remove(at: index)
             }
         }
+        reloadListDelegate?.reloadList()
     }
 }

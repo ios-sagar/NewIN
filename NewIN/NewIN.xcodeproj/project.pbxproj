@@ -53,6 +53,9 @@
 		FF85D95527D79AFE00CFD9EF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D95427D79AFE00CFD9EF /* Global.swift */; };
 		FF85D95627D79AFE00CFD9EF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D95427D79AFE00CFD9EF /* Global.swift */; };
 		FF85D95727D79AFE00CFD9EF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D95427D79AFE00CFD9EF /* Global.swift */; };
+		FF85D95A27D7D24900CFD9EF /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D95927D7D24900CFD9EF /* ItemViewModel.swift */; };
+		FF85D95B27D7D24900CFD9EF /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D95927D7D24900CFD9EF /* ItemViewModel.swift */; };
+		FF85D95C27D7D24900CFD9EF /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85D95927D7D24900CFD9EF /* ItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,7 @@
 		FF85D93B27D7686F00CFD9EF /* WishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishListTableViewCell.xib; sourceTree = "<group>"; };
 		FF85D94F27D7798400CFD9EF /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		FF85D95427D79AFE00CFD9EF /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		FF85D95927D7D24900CFD9EF /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,7 @@
 		FF7EBC5B27D6673B001C18DC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FF85D95827D7D23C00CFD9EF /* ItemViewModel */,
 				FF7EBC5D27D6674B001C18DC /* WishListViewModel */,
 				FF7EBC5C27D66741001C18DC /* DashboardViewModel */,
 			);
@@ -283,6 +288,14 @@
 				FF85D95427D79AFE00CFD9EF /* Global.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		FF85D95827D7D23C00CFD9EF /* ItemViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF85D95927D7D24900CFD9EF /* ItemViewModel.swift */,
+			);
+			path = ItemViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +444,7 @@
 				FF7EBC6C27D66985001C18DC /* NetworkManager.swift in Sources */,
 				FF7EBC8127D699FE001C18DC /* WishListViewController.swift in Sources */,
 				FF7EBC6527D66794001C18DC /* Constants.swift in Sources */,
+				FF85D95A27D7D24900CFD9EF /* ItemViewModel.swift in Sources */,
 				FF7EBC6127D6677D001C18DC /* Router.swift in Sources */,
 				FF7EBC7A27D68C59001C18DC /* ItemCollectionViewCell.swift in Sources */,
 				FF85D95527D79AFE00CFD9EF /* Global.swift in Sources */,
@@ -453,6 +467,7 @@
 				FF7EBC6227D6677D001C18DC /* Router.swift in Sources */,
 				FF7EBC3F27D66207001C18DC /* NewINTests.swift in Sources */,
 				FF7EBC6627D66794001C18DC /* Constants.swift in Sources */,
+				FF85D95B27D7D24900CFD9EF /* ItemViewModel.swift in Sources */,
 				FF85D93D27D7687000CFD9EF /* WishListTableViewCell.swift in Sources */,
 				FF85D95627D79AFE00CFD9EF /* Global.swift in Sources */,
 				FF7EBC8227D699FE001C18DC /* WishListViewController.swift in Sources */,
@@ -466,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF85D95C27D7D24900CFD9EF /* ItemViewModel.swift in Sources */,
 				FF85D95227D7798400CFD9EF /* ItemViewController.swift in Sources */,
 				FF7EBC4B27D66207001C18DC /* NewINUITestsLaunchTests.swift in Sources */,
 				FF7EBC6327D6677D001C18DC /* Router.swift in Sources */,

@@ -42,6 +42,7 @@ extension WishListViewController : UITableViewDelegate, UITableViewDataSource{
         cell.separatorInset = UIEdgeInsets.zero
         cell.selectionStyle = .none
         cell.configureCell(item: wishListItem, indexPath: indexPath.row)
+        cell.reloadListDelegate = self
         return cell
     }
     
@@ -49,4 +50,12 @@ extension WishListViewController : UITableViewDelegate, UITableViewDataSource{
         return 189.0
     }
     
+}
+
+extension WishListViewController : reloadListDelegate{
+    func reloadList() {
+        wishListItem = Global.sharedInstance.itemValues
+        self.tlbl_title.text = "WISHLIST (" + String(Global.sharedInstance.itemValues.count) + ")"
+        tbl_wishList.reloadData()
+    }
 }

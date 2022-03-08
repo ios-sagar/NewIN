@@ -19,6 +19,7 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var lbl_itemPrice: UILabel!
     @IBOutlet weak var btn_AddToCart: UIButton!
     var isChecked = true
+    private let itemViewModel = ItemViewModel()
     
     
     override func viewDidLoad() {
@@ -61,8 +62,8 @@ class ItemViewController: UIViewController {
         }
     }
     
-    @IBAction func closeBtnClicked(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func btnWishListClicked(_ sender: Any) {
+        itemViewModel.addToWishListClicked(btn_wishlist: sender as! UIButton, itemValue: itemData)
     }
     
     @IBAction func backBtnClicked(_ sender: Any) {

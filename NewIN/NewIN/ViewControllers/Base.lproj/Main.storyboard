@@ -191,11 +191,11 @@
                                             <constraint firstAttribute="height" constant="30" id="w4t-NT-kyK"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
-                                            <backgroundConfiguration key="background" image="close"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="wishlist"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="closeBtnClicked:" destination="YOd-rX-ZNf" eventType="touchUpInside" id="DNt-jp-Deq"/>
+                                            <action selector="btnWishListClicked:" destination="YOd-rX-ZNf" eventType="touchUpInside" id="S6r-jJ-qGK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BN-fU-D9n">
@@ -369,6 +369,7 @@
     <resources>
         <image name="back" width="32" height="32"/>
         <image name="close" width="32" height="32"/>
+        <image name="wishlist" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
