@@ -26,6 +26,5 @@ class ItemViewModel: NSObject {
                 break
             }
         }
-        print(Global.sharedInstance.itemValues)
     }
 }

@@ -29,7 +29,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="o8k-XY-33m" firstAttribute="leading" secondItem="w9t-Qa-ft9" secondAttribute="leading" constant="92" id="APP-Tk-wTE"/>
                                     <constraint firstAttribute="trailing" secondItem="o8k-XY-33m" secondAttribute="trailing" constant="94" id="eBO-gi-6FN"/>
@@ -117,7 +117,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Ndc-gv-eHe" secondAttribute="bottom" constant="27" id="2ol-kE-QGf"/>
                                     <constraint firstAttribute="height" constant="104" id="Fay-vs-l4d"/>
@@ -213,7 +213,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="5BN-fU-D9n" firstAttribute="top" secondItem="nUb-TD-OBd" secondAttribute="top" constant="47" id="309-Lt-P8z"/>
                                     <constraint firstItem="FCh-5e-teA" firstAttribute="top" secondItem="nUb-TD-OBd" secondAttribute="top" constant="47" id="DSW-Yq-H0F"/>
@@ -372,9 +372,6 @@
         <image name="wishlist" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

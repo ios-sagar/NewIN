@@ -217,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				FF85D95827D7D23C00CFD9EF /* ItemViewModel */,
-				FF7EBC5D27D6674B001C18DC /* WishListViewModel */,
 				FF7EBC5C27D66741001C18DC /* DashboardViewModel */,
 			);
 			path = ViewModels;
@@ -229,13 +228,6 @@
 				FF7EBC7327D66B2C001C18DC /* DashboardviewModel.swift */,
 			);
 			path = DashboardViewModel;
-			sourceTree = "<group>";
-		};
-		FF7EBC5D27D6674B001C18DC /* WishListViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WishListViewModel;
 			sourceTree = "<group>";
 		};
 		FF7EBC5E27D6675A001C18DC /* Services */ = {
