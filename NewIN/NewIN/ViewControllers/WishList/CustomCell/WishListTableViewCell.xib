@@ -57,6 +57,9 @@
                                 <inset key="imageEdgeInsets" minX="100" minY="100" maxX="100" maxY="100"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="delete" title="Remove"/>
+                                <connections>
+                                    <action selector="removeBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sfg-QQ-Fi8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B07-ND-L4m">
                                 <rect key="frame" x="161" y="37" width="154" height="25"/>
@@ -100,6 +103,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btn_remove" destination="0qs-u9-8Hk" id="h8u-ML-fsX"/>
+                <outlet property="img_itemImg" destination="Bon-nG-rgU" id="2dE-vP-RTq"/>
+                <outlet property="lbl_brand" destination="mGk-6L-Jp9" id="rr6-xa-Ddb"/>
+                <outlet property="lbl_name" destination="B07-ND-L4m" id="jaT-Aj-mmG"/>
+                <outlet property="lbl_price" destination="cQP-2H-kjZ" id="EUA-ed-AsF"/>
+            </connections>
             <point key="canvasLocation" x="139.85507246376812" y="126.22767857142857"/>
         </tableViewCell>
     </objects>

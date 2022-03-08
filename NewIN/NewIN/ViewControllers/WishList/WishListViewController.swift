@@ -66,7 +66,7 @@ extension WishListViewController : UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.wishListTableViewCell) as! WishListTableViewCell
         cell.separatorInset = UIEdgeInsets.zero
         cell.selectionStyle = .none
-//        cell.configureCell(city: self.filterData, indexPath: indexPath.row)
+        cell.configureCell()
         return cell
     }
     
